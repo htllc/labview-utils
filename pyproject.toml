@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "labview-utils"
+description = "Helper functions to use with LabVIEW's python node."
+authors = [
+    {name="Arthur Hebert-Ryan", email="arthur@heberttech.com"},
+]
+requires-python = ">=3.7,<3.10" # limit upper version for LabVIEW compatability, offical support up to 3.9 for LV2021
+dynamic = ["version"]
+readme = "README.md"
+
+[tool.setuptools.dynamic]
+version = {attr = "labview_utils.__version__"}

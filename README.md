@@ -13,3 +13,6 @@
     # Install the generated .whl file (using the version you built)
     pip install labview_utils-0.1.0-py3-none-any.whl
 
+## Install from GitHub
+
+    py -3.9-32 -m pip install git+ssh://git@github.com/htllc/labview-utils.git
